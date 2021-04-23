@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+    <p id="suc"></p>
+
+    <form action="login.html" method="GET">
+        <input type="email" id="email" name="email" placeholder="email">
+        <input type="password" id="pass" name="pass" placeholder="password">
+        <button id="log">Login</button>
+    </form>
+    <br>
+    <hr><br>
+    <button id="registration"><a href="registration.html">Register here</a></button>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+
+// var x = document.referrer;    
+// console.log(x);
+
+// if (x == "wallet.html") {
+//     console.log(x);
+// } else {
+//     window.location.href = "login.html";
+// };
+
+
+        $(document).ready(function () {
+            $('#log').on('click', function (e) {
+                e.preventDefault();
+                $.post('/login', $('form').serialize()).done(function (dt) {
+                    if (dt.insertedCount == 1) {
+                        $('#suc').text("You've successfully registered.");
+                    } else if (dt.msgs) {
+                        $('#suc').text(dt.msgs);
+                    }else if(dt.suc){
+                        setTimeout(function () {
+                            var urlParams = new URLSearchParams(window.location.search);
+                            // var email = urlParams.get('email');
+                            var email = $('#email').val();
+                            window.location.href = 'wallet.html?email='+email
+                        }, 700);
+                    }else if(dt.fail){
+                        $('#suc').text(dt.fail);
+                    }
+                })
+
+
+
+
+            })
+        })
+    </script>
+
+</body>
+
+</html>

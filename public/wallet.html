@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="wallet.html" method="get">
+        <label for="sender">Username:</label>
+        <span type="text" name="sender2" id="sender2"></span><br>
+        <input name="sender" id="sender" disabled>
+        <input type="text" name="receiver" id="receiver" placeholder="receiver">
+        <input type="number" name="amount" id="amount" placeholder="amount">
+        <button id="sendCoins">Send</button>
+    </form>
+
+    <style>
+input
+{
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 1px 6px;
+}
+    </style>
+
+
+
+    <script src="jquery-3.5.1.min.js"></script>
+
+    <script>
+
+
+        // document.getElementById("write").innerHTML = window.location.search;
+        var urlParams = new URLSearchParams(window.location.search);
+        var emailId = urlParams.get('email');
+        $('#sender2').text(emailId);
+        $('#sender').val(emailId)
+   
+
+        $(document).ready(function () {
+            $.ajax({
+                method: 'GET',
+                url: '/wallet'
+            }).done(function (data) {
+                console.log(data);
+            })
+
+
+            $('#sendCoins').on('click',function(e){
+                e.preventDefault();
+                $.post('/wallet',$('form').serialize()).
+                done(function(dt){
+                    console.log(dt);
+                })
+            })
+
+
+        })
+    </script>
+
+</body>
+
+</html>
