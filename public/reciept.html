@@ -85,9 +85,6 @@
     <form action="/logout">
       <p style="float:right; margin-top:-34px;"><input type="submit" id="btn" value="logout"></p>
     </form>
-    <form action="/about">
-      <p style="float:right;margin-top:-34px;"><input value="About us" type="submit" id="btn"></p>
-    </form>
 
 </div>
 </div>
@@ -99,22 +96,42 @@
   <div class="bill" id="receipt">
 
     <p style="font-size: 40px; text-align: center;"><strong>THANK YOU</strong></p>
-    <p style="text-align: center;">{{s}} for using our blockchain technology <br> we hope you enjoyed the experience</p>
+    <p style="text-align: center;" id="sender"></p>
 
     <hr>
 
-    <p style="text-align: left; padding-left:20px;">Transaction date and time: {{T}}</p>
-    <p style="text-align: left; padding-left: 20px;">Receiver: {{r}}</p>
-    <p style="text-align: right; float: right; padding-right:20px; padding-bottom: 10px;">Transaction amount: {{t}}</p>
+    <p style="text-align: left; padding-left:20px;" id="timestamp"></p>
+    <p style="text-align: left; padding-left: 20px;" id="receiver"></p>
+    <p style="text-align: right; float: right; padding-right:20px; padding-bottom: 10px;" id="amountTrans"></p>
 
 
     <hr>
 
-    <p style="text-align: center;">For further details contact us: smartcontract70@gmail.com </p>
+    <p style="text-align: center;">For further details contact us: rahilmemdani19@gmail.com </p>
   </div>
 
   <script src="jquery-3.5.1.min.js"></script>
   <script>
+
+    $('#btn').on('click',function(e){
+      e.preventDefault();
+      window.location.href='login.html';
+    })
+
+    //new Date(val.DateAdded).toLocaleString()
+
+    $.ajax({
+      method:'GET',
+      url:'/reciept'
+    }).done(function(data){
+      $.each(data,function(ind,val){
+        $('#receiver').text('Receiver: '+val.receiver);
+        $('#amountTrans').text('Transaction amount: '+val.amount)
+        $('#sender').html(val.sender+' for using our blockchain technology <br> we hope you have enjoyed the experience')
+        $('#timestamp').text("Transaction date and time: "+ new Date(val.timestamp).toLocaleString())
+      })
+      console.log(data);
+    })
 
   </script>
 

@@ -13,7 +13,7 @@
     <form>
         <input type="text" name="name" placeholder="name">
         <!-- autocomplete="none" -->
-        <input type="email" id="email" name="email" placeholder="email"  required>
+        <input type="email" id="email" name="email"  placeholder="email"  required>
         <input type="password" id="pass" name="pass" placeholder="password"   minlength="8" required>
         <button id="reg">Register</button>
     </form>
@@ -25,20 +25,35 @@
         $(document).ready(function () {
             $('#reg').on('click', function (e) {
                 e.preventDefault();
+
+
+
+                $.post('/email', $('form').serialize()).
+                done(function(dt){
+                    if(dt.Mail){
                 $.post('/register', $('form').serialize()).done(function (dt) {
                     if (dt.insertedCount == 1) {
                         $('#suc').text("You've successfully registered.");
+                        // $.post('/email', $('form').serialize());
                         setTimeout(function () {
                             window.location.href = 'login.html'
                         }, 1000);
                     } else if (dt.msg = 'Email is already in use') {
                         $('#suc').text(dt.msg);
+                            
                     }
-                    console.log(dt.msg)
+                    // console.log(dt.msg)
                 })
-
+            }else if(dt.sentAlready){
+                console.log(dt.sentAlready);
+            }else{
+                console.log('Email id is not registered to gmail');
+            }
+            })
 
             })
+
+
         })
     </script>
 

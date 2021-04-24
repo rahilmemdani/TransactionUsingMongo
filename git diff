@@ -1,0 +1,2842 @@
+Last login: Sat Apr 24 12:33:08 on console
+apple@Rahils-MacBook-Air ~ % ls
+Applications		Pictures		index.html
+Desktop			Postman			node_modules
+Documents		Public			package-lock.json
+Downloads		Sites			package.json
+Library			backup.txt		pr
+Moon			class.basic		section002.txt
+Movies			cmd-here.exe		section002.txt-java
+Music			eclipse-workspace	untitled19.py
+PacketTracer7		fonts
+apple@Rahils-MacBook-Air ~ % cd Desktop
+apple@Rahils-MacBook-Air Desktop % ls
+EXTC_BE_B_802_Rahil_Memdani_WN1.pdf	gitRepo
+GITAndDocker				nodeJS
+Java with eclipse			payment
+dummy					qe-drive
+apple@Rahils-MacBook-Air Desktop % cd payment
+apple@Rahils-MacBook-Air payment % ls
+conn.js			package.json		server.js
+node_modules		public
+package-lock.json	router
+apple@Rahils-MacBook-Air payment % code .
+apple@Rahils-MacBook-Air payment % nodemon server.js
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/login.js:10
+    db.collection('wallet').insertOne({ reciever: req.body.email,amount }
+                                                                        ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:17:15)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+CommandResult {
+  result: { n: 1, ok: 1 },
+  connection: Connection {
+    _events: [Object: null prototype] {
+      commandStarted: [Function (anonymous)],
+      commandFailed: [Function (anonymous)],
+      commandSucceeded: [Function (anonymous)],
+      clusterTimeReceived: [Function (anonymous)]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    id: 1,
+    address: '127.0.0.1:27017',
+    bson: BSON {},
+    socketTimeout: 0,
+    host: 'localhost',
+    port: 27017,
+    monitorCommands: false,
+    closed: false,
+    destroyed: false,
+    lastIsMasterMS: 2,
+    [Symbol(kCapture)]: false,
+    [Symbol(description)]: StreamDescription {
+      address: '127.0.0.1:27017',
+      type: 'Standalone',
+      minWireVersion: 0,
+      maxWireVersion: 9,
+      maxBsonObjectSize: 16777216,
+      maxMessageSizeBytes: 48000000,
+      maxWriteBatchSize: 100000,
+      compressors: []
+    },
+    [Symbol(generation)]: 0,
+    [Symbol(lastUseTime)]: 727063,
+    [Symbol(queue)]: Map(0) {},
+    [Symbol(messageStream)]: MessageStream {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      bson: BSON {},
+      maxBsonMessageSize: 67108864,
+      [Symbol(kCapture)]: false,
+      [Symbol(buffer)]: [BufferList]
+    },
+    [Symbol(stream)]: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'localhost',
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 0,
+      _peername: [Object],
+      [Symbol(async_id_symbol)]: 116,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: -1,
+        _idlePrev: null,
+        _idleNext: null,
+        _idleStart: 15152,
+        _onTimeout: null,
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: true,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 118,
+        [Symbol(triggerId)]: 114
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    [Symbol(ismaster)]: {
+      ismaster: true,
+      topologyVersion: [Object],
+      maxBsonObjectSize: 16777216,
+      maxMessageSizeBytes: 48000000,
+      maxWriteBatchSize: 100000,
+      localTime: 2021-04-24T07:14:45.429Z,
+      logicalSessionTimeoutMinutes: 30,
+      connectionId: 16,
+      minWireVersion: 0,
+      maxWireVersion: 9,
+      readOnly: false,
+      ok: 1
+    }
+  },
+  message: BinMsg {
+    parsed: true,
+    raw: <Buffer 2d 00 00 00 c1 00 00 00 05 00 00 00 dd 07 00 00 00 00 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b 00 00 00 00 00 00 00 f0 3f 00>,
+    data: <Buffer 00 00 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b 00 00 00 00 00 00 00 f0 3f 00>,
+    bson: BSON {},
+    opts: { promoteLongs: true, promoteValues: true, promoteBuffers: false },
+    length: 45,
+    requestId: 193,
+    responseTo: 5,
+    opCode: 2013,
+    fromCompressed: undefined,
+    responseFlags: 0,
+    checksumPresent: false,
+    moreToCome: false,
+    exhaustAllowed: false,
+    promoteLongs: true,
+    promoteValues: true,
+    promoteBuffers: false,
+    documents: [ [Object] ],
+    index: 29
+  },
+  ops: [
+    {
+      email: 'rmemdanib@gmail.com',
+      pass: '12345',
+      _id: 6083c571043edc039e84eecf
+    }
+  ],
+  insertedCount: 1,
+  insertedId: 6083c571043edc039e84eecf
+}
+undefined
+undefined
+CommandResult {
+  result: { n: 1, ok: 1 },
+  connection: Connection {
+    _events: [Object: null prototype] {
+      commandStarted: [Function (anonymous)],
+      commandFailed: [Function (anonymous)],
+      commandSucceeded: [Function (anonymous)],
+      clusterTimeReceived: [Function (anonymous)]
+    },
+    _eventsCount: 4,
+    _maxListeners: undefined,
+    id: 1,
+    address: '127.0.0.1:27017',
+    bson: BSON {},
+    socketTimeout: 0,
+    host: 'localhost',
+    port: 27017,
+    monitorCommands: false,
+    closed: false,
+    destroyed: false,
+    lastIsMasterMS: 2,
+    [Symbol(kCapture)]: false,
+    [Symbol(description)]: StreamDescription {
+      address: '127.0.0.1:27017',
+      type: 'Standalone',
+      minWireVersion: 0,
+      maxWireVersion: 9,
+      maxBsonObjectSize: 16777216,
+      maxMessageSizeBytes: 48000000,
+      maxWriteBatchSize: 100000,
+      compressors: []
+    },
+    [Symbol(generation)]: 0,
+    [Symbol(lastUseTime)]: 924222,
+    [Symbol(queue)]: Map(0) {},
+    [Symbol(messageStream)]: MessageStream {
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: true,
+      bson: BSON {},
+      maxBsonMessageSize: 67108864,
+      [Symbol(kCapture)]: false,
+      [Symbol(buffer)]: [BufferList]
+    },
+    [Symbol(stream)]: Socket {
+      connecting: false,
+      _hadError: false,
+      _parent: null,
+      _host: 'localhost',
+      _readableState: [ReadableState],
+      _events: [Object: null prototype],
+      _eventsCount: 7,
+      _maxListeners: undefined,
+      _writableState: [WritableState],
+      allowHalfOpen: false,
+      _sockname: null,
+      _pendingData: null,
+      _pendingEncoding: '',
+      server: null,
+      _server: null,
+      timeout: 0,
+      _peername: [Object],
+      [Symbol(async_id_symbol)]: 116,
+      [Symbol(kHandle)]: [TCP],
+      [Symbol(kSetNoDelay)]: true,
+      [Symbol(lastWriteQueueSize)]: 0,
+      [Symbol(timeout)]: Timeout {
+        _idleTimeout: -1,
+        _idlePrev: null,
+        _idleNext: null,
+        _idleStart: 15152,
+        _onTimeout: null,
+        _timerArgs: undefined,
+        _repeat: null,
+        _destroyed: true,
+        [Symbol(refed)]: false,
+        [Symbol(kHasPrimitive)]: false,
+        [Symbol(asyncId)]: 118,
+        [Symbol(triggerId)]: 114
+      },
+      [Symbol(kBuffer)]: null,
+      [Symbol(kBufferCb)]: null,
+      [Symbol(kBufferGen)]: null,
+      [Symbol(kCapture)]: false,
+      [Symbol(kBytesRead)]: 0,
+      [Symbol(kBytesWritten)]: 0
+    },
+    [Symbol(ismaster)]: {
+      ismaster: true,
+      topologyVersion: [Object],
+      maxBsonObjectSize: 16777216,
+      maxMessageSizeBytes: 48000000,
+      maxWriteBatchSize: 100000,
+      localTime: 2021-04-24T07:14:45.429Z,
+      logicalSessionTimeoutMinutes: 30,
+      connectionId: 16,
+      minWireVersion: 0,
+      maxWireVersion: 9,
+      readOnly: false,
+      ok: 1
+    }
+  },
+  message: BinMsg {
+    parsed: true,
+    raw: <Buffer 2d 00 00 00 fd 00 00 00 21 00 00 00 dd 07 00 00 00 00 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b 00 00 00 00 00 00 00 f0 3f 00>,
+    data: <Buffer 00 00 00 00 00 18 00 00 00 10 6e 00 01 00 00 00 01 6f 6b 00 00 00 00 00 00 00 f0 3f 00>,
+    bson: BSON {},
+    opts: { promoteLongs: true, promoteValues: true, promoteBuffers: false },
+    length: 45,
+    requestId: 253,
+    responseTo: 33,
+    opCode: 2013,
+    fromCompressed: undefined,
+    responseFlags: 0,
+    checksumPresent: false,
+    moreToCome: false,
+    exhaustAllowed: false,
+    promoteLongs: true,
+    promoteValues: true,
+    promoteBuffers: false,
+    documents: [ [Object] ],
+    index: 29
+  },
+  ops: [ { email: 'zavian', pass: '1234', _id: 6083c636043edc039e84eed1 } ],
+  insertedCount: 1,
+  insertedId: 6083c636043edc039e84eed1
+}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:23
+            db.collection('wallet').updateOne({email:req.body.sender},{$set:{amount:amount - }})
+                                                                                             ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+ReferenceError: amount is not defined
+    at /Users/apple/Desktop/payment/router/wallet.js:23:85
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+    at setCursorDeadAndNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:676:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+ReferenceError: amount is not defined
+    at /Users/apple/Desktop/payment/router/wallet.js:24:88
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+    at setCursorDeadAndNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:676:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:23
+            db.collection('wallet').find({email:req.body.sender}).toArray(function(err,rows))
+                                                                                            ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+100
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+ReferenceError: amount is not defined
+    at /Users/apple/Desktop/payment/router/wallet.js:25:85
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+    at setCursorDeadAndNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:676:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:41
+module.exports = router;
+                        
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:41
+module.exports = router;
+                        
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:34
+            }
+            ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:40
+module.exports = router;
+                        
+
+SyntaxError: Unexpected end of input
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+100
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+Amount: 100
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:26
+            db.collection('wallet').updateOne({email:req.body.receiver},{$set:{amount: rows[0].amount - req.body.amount) }}, function (err, rows) {
+                                                                                                                       ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:36
+    }
+    ^
+
+SyntaxError: missing ) after argument list
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:28:96
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+ReferenceError: rows is not defined
+    at /Users/apple/Desktop/payment/router/wallet.js:20:9
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+    at setCursorDeadAndNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:676:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+ReferenceError: rows is not defined
+    at /Users/apple/Desktop/payment/router/wallet.js:20:9
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+    at setCursorDeadAndNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:676:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:27
+            db.collection('wallet').updateOne({email:req.body.receiver},{$set:{amount: coll[0].amount) + parseInt(req.body.amount) }}, function (err, rows) {
+                                                                                                     ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:27
+            db.collection('wallet').updateOne({email:req.body.receiver},{$set:{amount: coll[0].amount + req.body.amount) }}, function (err, rows) {
+                                                                                                                       ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:27
+            db.collection('wallet').find({email:req.body.receiver}).toArray(function(err,coll))
+                                                                                              ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:29:99
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:29:99
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+n
+L[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+undefined
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:30:99
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+[]
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:30:99
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+[]
+zavian
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:31:99
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+[]
+zavian
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:31:99
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+{ _id: 6083c636043edc039e84eed1, email: 'zavian', pass: '1234' }
+92
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+^R  
+^C[nodemon] restarting due to changes...
+[nodemon] restarting due to changes...
+apple@Rahils-MacBook-Air payment % nodemon server.js
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 89
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 86
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 82
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 80
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+undefined
+rmemdanib@gmail.com
+[]
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:28:103
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+^C%                                                                                                                                                                                                         apple@Rahils-MacBook-Air payment % 
+apple@Rahils-MacBook-Air payment % nodemon server.js
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[]
+sender: rmemdanib@gmai.com
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+TypeError: Cannot read property 'amount' of undefined
+    at /Users/apple/Desktop/payment/router/wallet.js:27:103
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:66
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:925:9
+    at Cursor._endSession (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:397:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:923:12
+    at maybePromise (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:685:3)
+    at Cursor.close (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:916:12)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cursor.js:840:27
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:739:9
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:32:5)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:38
+    at _setCursorNotifiedImpl (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:696:10)
+    at setCursorNotified (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/cursor.js:683:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[]
+sender: rmemdanib@gmail.com
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 78
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+sender: undefined
+[]
+sender: rmemdanib@gmail.com
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 78
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+sender: undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+{}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:16
+var queryString = req.query;
+                  ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (/Users/apple/Desktop/payment/router/wallet.js:16:19)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+{}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+ReferenceError: window is not defined
+    at /Users/apple/Desktop/payment/router/wallet.js:19:41
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/apple/Desktop/payment/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/apple/Desktop/payment/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/apple/Desktop/payment/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:317:13)
+    at /Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/Users/apple/Desktop/payment/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:17
+var urlParams = new URLSearchParams(window.location.search);
+                                    ^
+
+ReferenceError: window is not defined
+    at Object.<anonymous> (/Users/apple/Desktop/payment/router/wallet.js:17:37)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:17
+    var queryString=req.query.?email
+                              ^
+
+SyntaxError: Unexpected token '?'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+undefined
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+{}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 78
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+sender: undefined
+^C%                                                                                                                                                                                                         apple@Rahils-MacBook-Air payment %                  
+apple@Rahils-MacBook-Air payment % nodemon server.js
+[nodemon] 2.0.7
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching path(s): *.*
+[nodemon] watching extensions: js,mjs,json
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 78
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+sender: undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+ReferenceError: addr is not defined
+    at /Users/apple/Desktop/payment/router/wallet.js:17:20
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/apple/Desktop/payment/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/apple/Desktop/payment/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/Users/apple/Desktop/payment/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:317:13)
+    at /Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/apple/Desktop/payment/node_modules/express/lib/router/index.js:275:10)
+    at urlencodedParser (/Users/apple/Desktop/payment/node_modules/body-parser/lib/types/urlencoded.js:91:7)
+    at Layer.handle [as handle_request] (/Users/apple/Desktop/payment/node_modules/express/lib/router/layer.js:95:5)
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+/wallet
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+{}
+{}
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+/wallet
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+http
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+localhost:3000
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+/wallet
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+rmemdanib@gmail.com
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+undefined
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 78
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+sender: undefined
+rmemdanib@gmail.com
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 78
+  },
+  { _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+]
+sender: undefined
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[]
+sender: rmemdanib@gmail.com
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[
+  {
+    _id: 6083c571043edc039e84eed0,
+    reciever: 'rmemdanib@gmail.com',
+    amount: 78
+  }
+]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+{ _id: 6083c636043edc039e84eed2, reciever: 'zavian', amount: 100 }
+zavian
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:267:15)
+    at ServerResponse.send (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:158:21)
+    at /Users/apple/Desktop/payment/router/wallet.js:41:25
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at executeCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/operations/execute_operation.js:65:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/operations/update_one.js:48:7
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/operations/common_functions.js:386:5
+    at handler (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/sdam/topology.js:944:24)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cmap/connection_pool.js:350:13
+    at handleOperationResult (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/sdam/server.js:558:5)
+    at MessageStream.messageHandler (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cmap/connection.js:277:5)
+    at MessageStream.emit (events.js:315:20) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:106
+      throw err;
+      ^
+
+Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client
+    at ServerResponse.setHeader (_http_outgoing.js:558:11)
+    at ServerResponse.header (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:771:10)
+    at ServerResponse.send (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:267:15)
+    at ServerResponse.send (/Users/apple/Desktop/payment/node_modules/express/lib/response.js:158:21)
+    at /Users/apple/Desktop/payment/router/wallet.js:41:25
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:697:5
+    at executeCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/operations/execute_operation.js:65:7)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/operations/update_one.js:48:7
+    at handleCallback (/Users/apple/Desktop/payment/node_modules/mongodb/lib/utils.js:102:55)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/operations/common_functions.js:386:5
+    at handler (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/sdam/topology.js:944:24)
+    at /Users/apple/Desktop/payment/node_modules/mongodb/lib/cmap/connection_pool.js:350:13
+    at handleOperationResult (/Users/apple/Desktop/payment/node_modules/mongodb/lib/core/sdam/server.js:558:5)
+    at MessageStream.messageHandler (/Users/apple/Desktop/payment/node_modules/mongodb/lib/cmap/connection.js:277:5)
+    at MessageStream.emit (events.js:315:20) {
+  code: 'ERR_HTTP_HEADERS_SENT'
+}
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:16
+router.get('/wallet',function())
+                               ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:16
+router.get('/wallet/',function())
+                                ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:16
+router.get('/wallet/wrongURL',function())
+                                        ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:43
+        } else if(db.collection('login').find({ email: queryString }).toArray(function(err,coll))){
+                                                                                                ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:40
+    db.collection('login').find({email:queryString}).toArray(function(err,val))
+                                                                              ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:42
+    })
+    ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:32
+})
+ ^
+
+SyntaxError: Unexpected token ')'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+/Users/apple/Desktop/payment/router/wallet.js:52
+                    res.json({'successMsg'})
+                                          ^
+
+SyntaxError: Unexpected token '}'
+    at wrapSafe (internal/modules/cjs/loader.js:979:16)
+    at Module._compile (internal/modules/cjs/loader.js:1027:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (/Users/apple/Desktop/payment/server.js:14:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[]
+[]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+94
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+true
+false
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+false
+true
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[]
+[]
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening at port 3000
+Success
+^C%                                                                                                                                                                                                         apple@Rahils-MacBook-Air payment % git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   public/wallet.html
+	modified:   router/registration.js
+	modified:   router/wallet.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	public/reciept.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+apple@Rahils-MacBook-Air payment % git add .
+apple@Rahils-MacBook-Air payment % git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   public/reciept.html
+	modified:   public/wallet.html
+	modified:   router/registration.js
+	modified:   router/wallet.js
+
+apple@Rahils-MacBook-Air payment % git commit -m"Solved the issue of wallet"
+[master 531f6dd] Solved the issue of wallet
+ 4 files changed, 187 insertions(+), 13 deletions(-)
+ create mode 100644 public/reciept.html
+apple@Rahils-MacBook-Air payment % git push origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 2.61 KiB | 2.61 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/rahilmemdani/TransactionUsingMongo
+   d966f87..531f6dd  master -> master
+apple@Rahils-MacBook-Air payment % git log   
+commit 531f6ddd2adb71ba148ae80ada7c3964039fb649 (HEAD -> master, origin/master)
+Author: Rahil Memdani <rmemdanib@gmail.com>
+Date:   Sat Apr 24 15:50:37 2021 +0530
+
+    Solved the issue of wallet
+
+commit d966f879bfffa642eb105bad17fcfbe85d4e063b
+Author: Rahil Memdani <rmemdanib@gmail.com>
+Date:   Sat Apr 24 01:26:16 2021 +0530
+
+    First stage done with login andregister
+apple@Rahils-MacBook-Air payment % git log --onelin
+efatal: unrecognized argument: --onelin
+apple@Rahils-MacBook-Air payment % git log --oneline
+531f6dd (HEAD -> master, origin/master) Solved the issue of wallet
+d966f87 First stage done with login andregister
+apple@Rahils-MacBook-Air payment % git diff 531f6dd d966f87
+diff --git a/public/reciept.html b/public/reciept.html
+deleted file mode 100644
+index 2f28fdd..0000000
+--- a/public/reciept.html
++++ /dev/null
+@@ -1,125 +0,0 @@
+-<!DOCTYPE html>
+-<html lang="en">
+-
+-<head>
+-  <meta charset="UTF-8">
+-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-  <title>SMART CONTRACT</title>
+-  <style>
+-    #btn {
+-      background-color: transparent;
+-      /* font-style: italic; */
+-      margin-inline-end: 10px;
+-      border: none;
+-      outline: none;
+-
+-    }
+-
+-    /* #btn
+-{
+-  justify-content: center;
+-  align-items: center;
+-  padding: 0 20px;
+-  min-width: 100px;
+-  height: 50px;
+-  background-color: transparent;
+-  border-radius:7px;
+-  cursor: pointer;
+-  margin-top: -35px;
+-  color: whitesmoke;
+-  font-size: 18px;
+-
+-} */
+-    #btn {
+-      justify-content: center;
+-      align-items: center;
+-      padding: 0 20px;
+-      min-width: 100px;
+-      height: 50px;
+-      background-color: transparent;
+-      border-radius: 7px;
+-      display: -webkit-box;
+-      display: -webkit-flex;
+-      display: -moz-box;
+-      display: -ms-flexbox;
+-      display: flex;
+-      -webkit-transition: all 0.4s;
+-      -o-transition: all 0.4s;
+-      -moz-transition: all 0.4s;
+-      transition: all 0.4s;
+-      position: relative;
+-      z-index: 1;
+-      border-top: 2px solid gray;
+-      border-left: 2px solid gray;
+-      border-bottom: 2px solid black;
+-      border-right: 2px solid black; 
+-      cursor: pointer;
+-      color: whitesmoke;
+-      font-size: 18px;
+-    }
+-
+-    #btn:hover {
+-      color: #0d4c6e;
+-      background-color: white;
+-      border-top: 2px solid gray;
+-      border-left: 2px solid gray;
+-      border-bottom: 2px solid black;
+-      border-right: 2px solid black;
+-    }
+-
+-    #receipt{
+-      border:2.7px solid black;
+-      margin-top:25px;
+-      padding:15px;
+-    }
+-
+-  </style>
+-</head>
+-</div>
+-
+-<div class="main">
+-
+-  <header style="background-color: #0d4c6e; color: whitesmoke;padding: 20px;">
+-    <h1>SMART CONTRACT</h1>
+-
+-    <form action="/logout">
+-      <p style="float:right; margin-top:-34px;"><input type="submit" id="btn" value="logout"></p>
+-    </form>
+-    <form action="/about">
+-      <p style="float:right;margin-top:-34px;"><input value="About us" type="submit" id="btn"></p>
+-    </form>
+-
+-</div>
+-</div>
+-</div>
+-</nav>
+-</header>
+-
+-<body>
+-  <div class="bill" id="receipt">
+-
+-    <p style="font-size: 40px; text-align: center;"><strong>THANK YOU</strong></p>
+-    <p style="text-align: center;">{{s}} for using our blockchain technology <br> we hope you enjoyed the experience</p>
+-
+-    <hr>
+-
+-    <p style="text-align: left; padding-left:20px;">Transaction date and time: {{T}}</p>
+-    <p style="text-align: left; padding-left: 20px;">Receiver: {{r}}</p>
+-    <p style="text-align: right; float: right; padding-right:20px; padding-bottom: 10px;">Transaction amount: {{t}}</p>
+-
+-
+-    <hr>
+-
+-    <p style="text-align: center;">For further details contact us: smartcontract70@gmail.com </p>
+-  </div>
+-
+-  <script src="jquery-3.5.1.min.js"></script>
+-  <script>
+-
+-  </script>
+-
+-
+-</body>
+-
+-
+-</html>
+\ No newline at end of file
+diff --git a/public/wallet.html b/public/wallet.html
+index ddd88e7..19ce1c7 100644
+--- a/public/wallet.html
++++ b/public/wallet.html
+@@ -5,7 +5,7 @@
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Wallet</title>
++    <title>Document</title>
+ </head>
+ 
+ <body>
+@@ -40,40 +40,23 @@ input
+         var urlParams = new URLSearchParams(window.location.search);
+         var emailId = urlParams.get('email');
+         $('#sender2').text(emailId);
+-        $('#sender').val(emailId);
+-
+-
+-        
++        $('#sender').val(emailId)
+    
+ 
+         $(document).ready(function () {
+             $.ajax({
+                 method: 'GET',
+-                url: '/wallet?email='+emailId
++                url: '/wallet'
+             }).done(function (data) {
+-                if(data.err){
+-                    window.location.href='about:blank';
+-                }
+                 console.log(data);
+             })
+ 
+ 
+-
+-
+-
+-
+             $('#sendCoins').on('click',function(e){
+                 e.preventDefault();
+-                $.post('/wallet?email='+emailId,$('form').serialize()).
++                $.post('/wallet',$('form').serialize()).
+                 done(function(dt){
+-                    if(dt.successMsg){
+-                        console.log('Success');
+-                        window.location.href='reciept.html'
+-                    }else if(dt.msgs){
+-                        console.log("The Reciever's email id is not registered");
+-                    }else if(dt.balance){
+-                        console.log('Negative balance');
+-                    }
++                    console.log(dt);
+                 })
+             })
+ 
+diff --git a/router/registration.js b/router/registration.js
+index 5643b10..b7d6b74 100644
+--- a/router/registration.js
++++ b/router/registration.js
+@@ -10,7 +10,6 @@ router.post('/register',function(req,res){
+             db.collection('login').insertOne({email:req.body.email,pass:req.body.pass},function(err,rows){
+                 if(!err){
+                     res.send(rows);
+-                    db.collection('wallet').insertOne({reciever: req.body.email,amount:100})
+                     console.log(rows);
+                 }else{
+                     res.send(err);
+diff --git a/router/wallet.js b/router/wallet.js
+index 53c79da..03c242e 100644
+--- a/router/wallet.js
++++ b/router/wallet.js
+@@ -4,63 +4,32 @@ const router = express.Router();
+ router.use(express.urlencoded({ extended: true }));
+ router.use(express.json());
+ 
+-var http = require('http');
+-http.createServer(function (req, res) {
+-    const queryObject = url.parse(req.url, true).query;
+-    res.writeHead(200, { 'Content-Type': 'text/html' });
+-    res.end('Feel free to add query parameters to the end of the url');
+-})
+-
+-
+-
+-
+-
+ router.get('/wallet', function (req, res) {
+-    var queryString=req.query.email
+-    db.collection('login').find({email:queryString}).toArray(function(err,val){
+-        if(val == ''){
+-            res.json({'err':'Window.location.href'})
+-        }else{
+     db.collection("wallet").find().toArray(function (err, rows) {
+         if (!err) {
+             res.send(rows);
++            console.log(req.body.sender);
+         } else {
+             res.send(err);
+         }
+     })
+-        }
+-})
+-
+ })
+ 
+ router.post('/wallet', function (req, res) {
+-    var queryString=req.query.email
+-
+-    db.collection('login').find({ email: req.body.receiver }).toArray(function (err, coll) {
+-        if (coll == '') {
++    db.collection('login').find({ email: req.body.receiver }).toArray(function (err, rows) {
++        if (rows == '') {
+             res.json({'msgs':"The Reciever's email id is not registered"})
+-            console.log(coll);
+-        } else{
+-            db.collection('wallet').find({reciever:queryString}).toArray(function(err,rows){
+-                if(rows[0].amount >= req.body.amount && req.body.amount>=1){
+-            db.collection('wallet').updateOne({reciever:queryString},{$set:{amount: parseInt(rows[0].amount) - parseInt(req.body.amount)}});
+-            db.collection('wallet').find({reciever:req.body.receiver}).toArray(function(err,collect){
+-            db.collection('wallet').updateOne({reciever:req.body.receiver},{$set:{amount: parseInt(collect[0].amount) + parseInt(req.body.amount) }}, function (err, rows) {
++        } else {
++            db.collection('wallet').insertOne({ reciever: req.body.receiver }, function (err, rows) {
+                 if (!err) {
+-                    res.json({'successMsg':'Successful'})
++                    res.send(rows)
+                 } else {
+                     res.send(err);
+                 }
+             })
+-        })
+-    }else{
+-        res.json({'balance':'negative'})
+-    }
+-    })
+-}
+-    // console.log(coll[0]);
+-})
+ 
++        }
++    })
+ })
+ 
+ 
+
+apple@Rahils-MacBook-Air payment % git diff  d966f87 531f6dd
+diff --git a/public/reciept.html b/public/reciept.html
+new file mode 100644
+index 0000000..2f28fdd
+--- /dev/null
++++ b/public/reciept.html
+@@ -0,0 +1,125 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>SMART CONTRACT</title>
++  <style>
++    #btn {
++      background-color: transparent;
++      /* font-style: italic; */
++      margin-inline-end: 10px;
++      border: none;
++      outline: none;
++
++    }
++
++    /* #btn
++{
++  justify-content: center;
++  align-items: center;
++  padding: 0 20px;
++  min-width: 100px;
++  height: 50px;
++  background-color: transparent;
++  border-radius:7px;
++  cursor: pointer;
++  margin-top: -35px;
++  color: whitesmoke;
++  font-size: 18px;
++
++} */
++    #btn {
++      justify-content: center;
++      align-items: center;
++      padding: 0 20px;
++      min-width: 100px;
++      height: 50px;
++      background-color: transparent;
++      border-radius: 7px;
++      display: -webkit-box;
++      display: -webkit-flex;
++      display: -moz-box;
++      display: -ms-flexbox;
++      display: flex;
++      -webkit-transition: all 0.4s;
++      -o-transition: all 0.4s;
++      -moz-transition: all 0.4s;
++      transition: all 0.4s;
++      position: relative;
++      z-index: 1;
++      border-top: 2px solid gray;
++      border-left: 2px solid gray;
++      border-bottom: 2px solid black;
++      border-right: 2px solid black; 
++      cursor: pointer;
++      color: whitesmoke;
++      font-size: 18px;
++    }
++
++    #btn:hover {
++      color: #0d4c6e;
++      background-color: white;
++      border-top: 2px solid gray;
++      border-left: 2px solid gray;
++      border-bottom: 2px solid black;
++      border-right: 2px solid black;
++    }
++
++    #receipt{
++      border:2.7px solid black;
++      margin-top:25px;
++      padding:15px;
++    }
++
++  </style>
++</head>
++</div>
++
++<div class="main">
++
++  <header style="background-color: #0d4c6e; color: whitesmoke;padding: 20px;">
++    <h1>SMART CONTRACT</h1>
++
++    <form action="/logout">
++      <p style="float:right; margin-top:-34px;"><input type="submit" id="btn" value="logout"></p>
++    </form>
++    <form action="/about">
++      <p style="float:right;margin-top:-34px;"><input value="About us" type="submit" id="btn"></p>
++    </form>
++
++</div>
++</div>
++</div>
++</nav>
++</header>
++
++<body>
++  <div class="bill" id="receipt">
++
++    <p style="font-size: 40px; text-align: center;"><strong>THANK YOU</strong></p>
++    <p style="text-align: center;">{{s}} for using our blockchain technology <br> we hope you enjoyed the experience</p>
++
++    <hr>
++
++    <p style="text-align: left; padding-left:20px;">Transaction date and time: {{T}}</p>
++    <p style="text-align: left; padding-left: 20px;">Receiver: {{r}}</p>
++    <p style="text-align: right; float: right; padding-right:20px; padding-bottom: 10px;">Transaction amount: {{t}}</p>
++
++
++    <hr>
++
++    <p style="text-align: center;">For further details contact us: smartcontract70@gmail.com </p>
++  </div>
++
++  <script src="jquery-3.5.1.min.js"></script>
++  <script>
++
++  </script>
++
++
++</body>
++
++
++</html>
+\ No newline at end of file
+diff --git a/public/wallet.html b/public/wallet.html
+index 19ce1c7..ddd88e7 100644
+--- a/public/wallet.html
++++ b/public/wallet.html
+@@ -5,7 +5,7 @@
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-    <title>Document</title>
++    <title>Wallet</title>
+ </head>
+ 
+ <body>
+@@ -40,23 +40,40 @@ input
+         var urlParams = new URLSearchParams(window.location.search);
+         var emailId = urlParams.get('email');
+         $('#sender2').text(emailId);
+-        $('#sender').val(emailId)
++        $('#sender').val(emailId);
++
++
++        
+    
+ 
+         $(document).ready(function () {
+             $.ajax({
+                 method: 'GET',
+-                url: '/wallet'
++                url: '/wallet?email='+emailId
+             }).done(function (data) {
++                if(data.err){
++                    window.location.href='about:blank';
++                }
+                 console.log(data);
+             })
+ 
+ 
++
++
++
++
+             $('#sendCoins').on('click',function(e){
+                 e.preventDefault();
+-                $.post('/wallet',$('form').serialize()).
++                $.post('/wallet?email='+emailId,$('form').serialize()).
+                 done(function(dt){
+-                    console.log(dt);
++                    if(dt.successMsg){
++                        console.log('Success');
++                        window.location.href='reciept.html'
++                    }else if(dt.msgs){
++                        console.log("The Reciever's email id is not registered");
++                    }else if(dt.balance){
++                        console.log('Negative balance');
++                    }
+                 })
+             })
+ 
+diff --git a/router/registration.js b/router/registration.js
+index b7d6b74..5643b10 100644
+--- a/router/registration.js
++++ b/router/registration.js
+@@ -10,6 +10,7 @@ router.post('/register',function(req,res){
+             db.collection('login').insertOne({email:req.body.email,pass:req.body.pass},function(err,rows){
+                 if(!err){
+                     res.send(rows);
++                    db.collection('wallet').insertOne({reciever: req.body.email,amount:100})
+                     console.log(rows);
+                 }else{
+                     res.send(err);
+diff --git a/router/wallet.js b/router/wallet.js
+index 03c242e..53c79da 100644
+--- a/router/wallet.js
++++ b/router/wallet.js
+@@ -4,32 +4,63 @@ const router = express.Router();
+ router.use(express.urlencoded({ extended: true }));
+ router.use(express.json());
+ 
++var http = require('http');
++http.createServer(function (req, res) {
++    const queryObject = url.parse(req.url, true).query;
++    res.writeHead(200, { 'Content-Type': 'text/html' });
++    res.end('Feel free to add query parameters to the end of the url');
++})
++
++
++
++
++
+ router.get('/wallet', function (req, res) {
++    var queryString=req.query.email
++    db.collection('login').find({email:queryString}).toArray(function(err,val){
++        if(val == ''){
++            res.json({'err':'Window.location.href'})
++        }else{
+     db.collection("wallet").find().toArray(function (err, rows) {
+         if (!err) {
+             res.send(rows);
+-            console.log(req.body.sender);
+         } else {
+             res.send(err);
+         }
+     })
++        }
++})
++
+ })
+ 
+ router.post('/wallet', function (req, res) {
+-    db.collection('login').find({ email: req.body.receiver }).toArray(function (err, rows) {
+-        if (rows == '') {
++    var queryString=req.query.email
++
++    db.collection('login').find({ email: req.body.receiver }).toArray(function (err, coll) {
++        if (coll == '') {
+             res.json({'msgs':"The Reciever's email id is not registered"})
+-        } else {
+-            db.collection('wallet').insertOne({ reciever: req.body.receiver }, function (err, rows) {
++            console.log(coll);
++        } else{
++            db.collection('wallet').find({reciever:queryString}).toArray(function(err,rows){
++                if(rows[0].amount >= req.body.amount && req.body.amount>=1){
++            db.collection('wallet').updateOne({reciever:queryString},{$set:{amount: parseInt(rows[0].amount) - parseInt(req.body.amount)}});
++            db.collection('wallet').find({reciever:req.body.receiver}).toArray(function(err,collect){
++            db.collection('wallet').updateOne({reciever:req.body.receiver},{$set:{amount: parseInt(collect[0].amount) + parseInt(req.body.amount) }}, function (err, rows) {
+                 if (!err) {
+-                    res.send(rows)
++                    res.json({'successMsg':'Successful'})
+                 } else {
+                     res.send(err);
+                 }
+             })
+-
+-        }
++        })
++    }else{
++        res.json({'balance':'negative'})
++    }
+     })
++}
++    // console.log(coll[0]);
++})
++
+ })
+ 
+ 
+apple@Rahils-MacBook-Air payment % 

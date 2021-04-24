@@ -2,84 +2,180 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wallet</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet</title>
 </head>
 
 <body>
 
-    <form action="wallet.html" method="get">
-        <label for="sender">Username:</label>
-        <span type="text" name="sender2" id="sender2"></span><br>
-        <input name="sender" id="sender" disabled>
-        <input type="text" name="receiver" id="receiver" placeholder="receiver">
-        <input type="number" name="amount" id="amount" placeholder="amount">
-        <button id="sendCoins">Send</button>
-    </form>
+  <form action="wallet.html" method="get">
+    <label for="sender">Username:</label>
+    <span type="text" name="sender2" id="sender2"></span><br>
+    <input name="sender" id="sender" disabled>
+    <input type="text" name="receiver" id="receiver" placeholder="receiver">
+    <input type="number" name="amount" id="amount" placeholder="amount">
+    <button id="sendCoins">Send</button>
+  </form>
 
-    <style>
-input
-{
-  border: 1px solid #ccc;
-  font-family: inherit;
-  font-size: inherit;
-  padding: 1px 6px;
-}
-    </style>
+  <br><br><br>
+
+  <table class="zigzag-table" style="margin-left: 200px;">
+    <thead>
+      <tr>
+        <th>Name of the Sender</th>
+        <th>Name of the Receiver</th>
+        <th>Timestamp</th>
+        <th>Amount Transacted</th>
+      </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+  </table>
+
+  <style>
+    input {
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: inherit;
+      padding: 1px 6px;
+    }
+
+
+    .zigzag-table {
+      /* max-width: 960px; */
+      max-width: max-content;
+      justify-content: center;
+      max-width: max-content;
+      margin: 20px 0px 0px 0px;
+    }
+
+    caption {
+      font-size: 1.6em;
+      font-weight: 400;
+      padding: 10px 0;
+    }
+
+    thead th {
+      font-weight: 400;
+      background: #0d4c6e;
+      ;
+      color: #FFF;
+    }
+
+    tr {
+      background: lightblue;
+      border-bottom: 1px solid #FFF;
+      margin-bottom: 5px;
+      font-size: large;
+      ;
+    }
+
+    tr:nth-child(even) {
+      background: lightblue;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 20px;
+      font-weight: 300;
+    }
+
+
+    tfoot tr {
+      background: none;
+    }
+
+    tfoot td {
+      padding: 10px 2px;
+      font-size: 0.8em;
+      font-style: italic;
+      color: rgb(130, 159, 168);
+    }
+  </style>
 
 
 
-    <script src="jquery-3.5.1.min.js"></script>
+  <script src="jquery-3.5.1.min.js"></script>
 
-    <script>
-
-
-        // document.getElementById("write").innerHTML = window.location.search;
-        var urlParams = new URLSearchParams(window.location.search);
-        var emailId = urlParams.get('email');
-        $('#sender2').text(emailId);
-        $('#sender').val(emailId);
+  <script>
 
 
-        
-   
+    // document.getElementById("write").innerHTML = window.location.search;
+    var urlParams = new URLSearchParams(window.location.search);
+    var emailId = urlParams.get('email');
+    $('#sender2').text(emailId);
+    $('#sender').val(emailId);
 
-        $(document).ready(function () {
-            $.ajax({
-                method: 'GET',
-                url: '/wallet?email='+emailId
-            }).done(function (data) {
-                if(data.err){
-                    window.location.href='about:blank';
-                }
+
+
+
+
+    $(document).ready(function () {
+      $.ajax({
+        method: 'GET',
+        url: '/wallet?email=' + emailId
+      }).done(function (data) {
+        if (data.err) {
+          window.location.href = 'about:blank';
+        }
+        // console.log(data);
+      })
+
+
+
+
+
+
+
+
+      $('#sendCoins').on('click', function (e) {
+        e.preventDefault();
+        $.post('/wallet?email=' + emailId,
+          $('form').serialize()).
+          done(function (dt) {
+            if (dt.successMsg) {
+              console.log('Success');
+              //Here...
+
+              $.post('/msgSent', $('form').serialize()).done(function (data) {
                 console.log(data);
-            })
+              })
 
+              $.post('/msgRec?email=' + emailId, $('form').serialize()).done(function (data) {
+                console.log(data);
+              })
+              window.location.href = 'reciept.html'
+            } else if (dt.msgs) {
+              console.log("The Reciever's email id is not registered");
+            } else if (dt.balance) {
+              console.log('Negative balance');
+            }
+          })
+      })
 
-
-
-
-
-            $('#sendCoins').on('click',function(e){
-                e.preventDefault();
-                $.post('/wallet?email='+emailId,$('form').serialize()).
-                done(function(dt){
-                    if(dt.successMsg){
-                        console.log('Success');
-                        window.location.href='reciept.html'
-                    }else if(dt.msgs){
-                        console.log("The Reciever's email id is not registered");
-                    }else if(dt.balance){
-                        console.log('Negative balance');
-                    }
-                })
-            })
-
-
+      $.ajax({
+        method: 'GET',
+        url: '/history?email=' + emailId,
+      }).done(function (data) {
+        $.each(data, function (ind, val) {
+          $('.zigzag-table').append(
+            `<tr>
+                        <td>${val.sender}</td>
+                        <td>${val.receiver}</td>
+                        <td>${new Date(val.timestamp).toLocaleString()}</td>
+                        <td>${val.amount}</td>
+                        </tr>`)
         })
-    </script>
+        // console.log(data);
+      })
+
+
+    })
+  </script>
 
 </body>
 
