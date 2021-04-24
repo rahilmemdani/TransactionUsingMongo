@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wallet</title>
 </head>
 
 <body>
@@ -40,23 +40,40 @@ input
         var urlParams = new URLSearchParams(window.location.search);
         var emailId = urlParams.get('email');
         $('#sender2').text(emailId);
-        $('#sender').val(emailId)
+        $('#sender').val(emailId);
+
+
+        
    
 
         $(document).ready(function () {
             $.ajax({
                 method: 'GET',
-                url: '/wallet'
+                url: '/wallet?email='+emailId
             }).done(function (data) {
+                if(data.err){
+                    window.location.href='about:blank';
+                }
                 console.log(data);
             })
 
 
+
+
+
+
             $('#sendCoins').on('click',function(e){
                 e.preventDefault();
-                $.post('/wallet',$('form').serialize()).
+                $.post('/wallet?email='+emailId,$('form').serialize()).
                 done(function(dt){
-                    console.log(dt);
+                    if(dt.successMsg){
+                        console.log('Success');
+                        window.location.href='reciept.html'
+                    }else if(dt.msgs){
+                        console.log("The Reciever's email id is not registered");
+                    }else if(dt.balance){
+                        console.log('Negative balance');
+                    }
                 })
             })
 

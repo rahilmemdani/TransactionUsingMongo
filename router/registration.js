@@ -10,6 +10,7 @@ router.post('/register',function(req,res){
             db.collection('login').insertOne({email:req.body.email,pass:req.body.pass},function(err,rows){
                 if(!err){
                     res.send(rows);
+                    db.collection('wallet').insertOne({reciever: req.body.email,amount:100})
                     console.log(rows);
                 }else{
                     res.send(err);
