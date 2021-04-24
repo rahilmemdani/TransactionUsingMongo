@@ -10,6 +10,7 @@ router.post('/login',function(req,res){
     db.collection('login').find({email:req.body.email}).toArray(function(err,rows){
         if(rows==''){
             res.json({'msgs':'This email id is not registered'})
+            console.log(rows);
         }else if(rows[0].pass == req.body.pass && rows[0].email == req.body.email){
             res.json({'suc':'Success'});
             // console.log(rows[0].pass);

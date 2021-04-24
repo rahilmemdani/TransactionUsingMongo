@@ -104,8 +104,6 @@ router.post('/msgSent', function (req, res) {
 
 //OTP
 
- 
-
 
 router.post('/otp', function (req, res) {
     var otp = otpGenerator.generate(6, { upperCase: false, specialChars: false, alphabets: false });
@@ -137,6 +135,40 @@ router.post('/otp', function (req, res) {
         }
     })
 })
+
+
+
+router.post('/otpReg', function (req, res) {
+    var otp = otpGenerator.generate(6, { upperCase: false, specialChars: false, alphabets: false });
+    var queryString = req.body.email;
+    console.log(queryString);
+    db.collection('login').find({ email: queryString }).toArray(function (err, rows) {
+        if (rows == '') {
+            console.log(rows);
+            res.json({ 'notReg': 'Email is not registered' });
+        } else {
+            console.log(queryString);
+            var mailOptions = {
+                from: 'rahilmemdani19@gmail.com',
+                to: queryString,
+                subject: 'OTP for the transaction',
+                text: `Dear Customer, the OTP for your transaction is ${otp}. Don't share it with anyone.`
+            };
+
+
+            transporter.sendMail(mailOptions, function (error, info) {
+                if (error) {
+                    console.log(error);
+                    res.json({ 'Error: ': error });
+                } else {
+                    console.log('Email sent: ' + info.response);
+                    res.json({ 'otp': otp });
+                }
+            })
+        }
+    })
+})
+
 
 
 

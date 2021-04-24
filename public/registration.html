@@ -11,11 +11,16 @@
 <body>
     <p id="suc"></p>
     <form>
+        <p></p>
         <input type="text" name="name" placeholder="name">
         <!-- autocomplete="none" -->
         <input type="email" id="email" name="email"  placeholder="email"  required>
-        <input type="password" id="pass" name="pass" placeholder="password"   minlength="8" required>
-        <button id="reg">Register</button>
+        <button id='otp'>send otp</button>
+        <input type="number" id="otpVal" placeholder="enter the otp">
+        <input type="number" id="otpValue" hidden>
+        <button id="sub">Submit</button>
+        <input type="password" id="pass" name="pass" placeholder="password"   minlength="8" hidden required>
+        <button id="reg" hidden>Register</button>
     </form>
     <!-- <br><hr><br>
     <button id="registration"><a href="registration.html">Register here</a></button> -->
@@ -23,10 +28,25 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function () {
-            $('#reg').on('click', function (e) {
+
+            $('#otp').on('click', function (e) {
                 e.preventDefault();
+                $.post('/otpReg', $('form').serialize()).done(function (data) {
+                    $('#otpValue').val(data.otp);
+                })
+
+            })
 
 
+            $('#sub').on('click', function (e) {
+                e.preventDefault();
+                // console.log($('#otpvalue').val());
+                var otpVal = $('#otpvalue').val()
+                if ($('#otpValue').val() == $('#otpVal').val()) {
+                    $('#reg').show();
+                    $('#pass').show();
+                    $('#reg').on('click', function (e) {
+                e.preventDefault();
 
                 $.post('/email', $('form').serialize()).
                 done(function(dt){
@@ -52,6 +72,40 @@
             })
 
             })
+                } else {
+                    $('p').text('Incorrect otp');
+                }
+            })
+
+            
+
+            // $('#reg').on('click', function (e) {
+            //     e.preventDefault();
+
+            //     $.post('/email', $('form').serialize()).
+            //     done(function(dt){
+            //         if(dt.Mail){
+            //     $.post('/register', $('form').serialize()).done(function (dt) {
+            //         if (dt.insertedCount == 1) {
+            //             $('#suc').text("You've successfully registered.");
+            //             // $.post('/email', $('form').serialize());
+            //             setTimeout(function () {
+            //                 window.location.href = 'login.html'
+            //             }, 1000);
+            //         } else if (dt.msg = 'Email is already in use') {
+            //             $('#suc').text(dt.msg);
+                            
+            //         }
+            //         // console.log(dt.msg)
+            //     })
+            // }else if(dt.sentAlready){
+            //     console.log(dt.sentAlready);
+            // }else{
+            //     console.log('Email id is not registered to gmail');
+            // }
+            // })
+
+            // })
 
 
         })
