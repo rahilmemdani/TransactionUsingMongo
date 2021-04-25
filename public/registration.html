@@ -11,16 +11,17 @@
 <body>
     <p id="suc"></p>
     <form>
-        <p></p>
-        <input type="text" name="name" placeholder="name">
+        <p id="otpPar"></p>
+        <input type="text" name="name" placeholder="name"><br>
         <!-- autocomplete="none" -->
         <input type="email" id="email" name="email"  placeholder="email"  required>
-        <button id='otp'>send otp</button>
+        <button id='otp'>send otp</button><br>
         <input type="number" id="otpVal" placeholder="enter the otp">
         <input type="number" id="otpValue" hidden>
-        <button id="sub">Submit</button>
+        <button id="sub">Submit</button><br>
         <input type="password" id="pass" name="pass" placeholder="password"   minlength="8" hidden required>
-        <button id="reg" hidden>Register</button>
+        <button id="show" hidden>show</button>
+        <button id="reg" hidden>Register</button><br>
     </form>
     <!-- <br><hr><br>
     <button id="registration"><a href="registration.html">Register here</a></button> -->
@@ -36,8 +37,10 @@
                     console.log(data)
                     console.log($('#otpValue').val());
                 })
-
             })
+
+            var regex = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])([a-zA-Z0-9@$!%*?&]{8,})$/
+            // console.log(regex.test('Cooldude@24'));
 
 
             $('#sub').on('click', function (e) {
@@ -47,8 +50,28 @@
                 if ($('#otpValue').val() == $('#otpVal').val()) {
                     $('#reg').show();
                     $('#pass').show();
+                    $('#show').show();
+
+
+
+                $('#show').on('click',function(e){
+                    e.preventDefault();
+                    let passType=$('#pass').attr('type');
+                        if(passType=='password'){
+                            $('#pass').attr('type','text');
+                            // $('#show').html('<i class="fas fa-eye"></i>');
+                            $('#show').text('hide');
+                        }else{
+                            $('#pass').attr('type','password');
+                            // $(this).html('<i class="fas fa-eye-slash"></i>');
+                            $('#show').text('show');
+                        }
+                })
+
                     $('#reg').on('click', function (e) {
                 e.preventDefault();
+
+                    if(regex.test($('#pass').val())){
 
                 $.post('/email', $('form').serialize()).
                 done(function(dt){
@@ -72,12 +95,21 @@
                 console.log('Email id is not registered to gmail');
             }
             })
-
+        }else{
+            console.log(`Min 1 uppercase letter.
+Min 1 lowercase letter.
+Min 1 special character.
+Min 1 number.
+Min 8 characters.
+Max 30 characters.`);
+        }
             })
+            
                 } else {
-                    $('p').text('Incorrect otp');
+                    $('#otpPar').text('Incorrect otp');
                 }
             })
+            
 
             
 

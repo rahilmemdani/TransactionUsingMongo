@@ -144,8 +144,6 @@ router.post('/otpReg', function (req, res) {
     console.log(queryString);
     db.collection('login').find({ email: queryString }).toArray(function (err, rows) {
         if (rows == '') {
-            // console.log(rows);
-            // res.json({ 'notReg': 'Email is not registered' });
             console.log(queryString);
             var mailOptions = {
                 from: 'rahilmemdani19@gmail.com',
@@ -164,23 +162,6 @@ router.post('/otpReg', function (req, res) {
                 }
             })
         } else {
-            // console.log(queryString);
-            // var mailOptions = {
-            //     from: 'rahilmemdani19@gmail.com',
-            //     to: queryString,
-            //     subject: 'OTP for Email Verification',
-            //     text: `Dear Customer, ${otp} is your One Time Password (OTP) for email verification. Don't share it with anyone.`
-            // };
-
-            // transporter.sendMail(mailOptions, function (error, info) {
-            //     if (error) {
-            //         console.log(error);
-            //         res.json({ 'Error: ': error });
-            //     } else {
-            //         console.log('Email sent: ' + info.response);
-            //         res.json({ 'otp': otp });
-            //     }
-            // })
             console.log(rows);
             res.json({ 'notReg': 'Email is already registered' });
         }
