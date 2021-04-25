@@ -33,6 +33,8 @@
                 e.preventDefault();
                 $.post('/otpReg', $('form').serialize()).done(function (data) {
                     $('#otpValue').val(data.otp);
+                    console.log(data)
+                    console.log($('#otpValue').val());
                 })
 
             })
