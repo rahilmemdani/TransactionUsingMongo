@@ -18,6 +18,8 @@
 
 <body>
 
+
+
     <div class="testbox">
         <h1 style="color:#3a57af"><b>Login</b></h1>
         <form>
@@ -321,17 +323,12 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script>
 
-        // var x = document.referrer;    
-        // console.log(x);
-
-        // if (x == "wallet.html") {
-        //     console.log(x);
-        // } else {
-        //     window.location.href = "login.html";
-        // };
-
 
         $(document).ready(function () {
+
+
+
+
 
             $('#show').on('click', function (e) {
                 e.preventDefault();
@@ -360,10 +357,17 @@
                         
                     } else if (dt.suc) {
                         setTimeout(function () {
-                            var urlParams = new URLSearchParams(window.location.search);
-                            // var email = urlParams.get('email');
-                            var email = $('#email').val();
-                            window.location.href = 'home.html?email=' + email
+
+                  $.ajax({
+                    method:'GET',
+                    url:'/encrypt'
+                  }).done(function(dt){
+                    console.log(dt);
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var email = $('#email').val(); 
+                     window.location.href='home.html?email='+email+'&enc='+dt;
+                  })
+
                         }, 700);
                         $('.email').text('')
                         $('#suc').text('');

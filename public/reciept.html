@@ -153,9 +153,28 @@
   <script src="jquery-3.5.1.min.js"></script>
   <script>
 
+// function preventBack() 
+//    {
+//    window.history.forward();
+//    }
+// setTimeout("preventBack()", 0);
+// window.onunload = function () { null };
+
+
 
 var urlParams = new URLSearchParams(window.location.search);
     var email = urlParams.get('email');
+
+
+    if(performance.navigation.type == 2) {
+    //Do your code here
+    location.reload();
+    var otp=27383
+      var otpWrong=1004
+      if(otp!=otpWrong){
+        window.location.href="about:blank";
+      }
+    }
 
     $('#btn').on('click',function(e){
       e.preventDefault();
@@ -164,7 +183,15 @@ var urlParams = new URLSearchParams(window.location.search);
 
     $('#btns').on('click',function(e){
       e.preventDefault();
-      window.location.href='home.html?email='+email;
+      $.ajax({
+                    method:'GET',
+                    url:'/encrypt'
+                  }).done(function(dt){
+                    console.log(dt);
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var email =urlParams.get('email');
+                     window.location.href='home.html?email='+email+'&enc='+dt;
+                  })
     })
 
     //new Date(val.DateAdded).toLocaleString()

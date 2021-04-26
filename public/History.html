@@ -107,9 +107,34 @@ span{
 
     <script src="jquery-3.5.1.min.js"></script>
     <script>
+   
+  //  if(performance.navigation.type == 2) {
+  //   //Do your code here
+  //   location.reload();
+  //   var otp=27383
+  //     var otpWrong=1004
+  //     if(otp!=otpWrong){
+  //       window.location.href="about:blank";
+  //     }
+  //   }
+
+
         $(document).ready(function(){
                 var urlParams = new URLSearchParams(window.location.search);
                      var emailId = urlParams.get('email');
+
+                     $.ajax({
+          method:'get',
+          url:'/encryptHome'
+        }).done(function(dt){
+          var urlParams = new URLSearchParams(window.location.search);
+          var encUrl = urlParams.get('enc');
+          var encDB = dt.otp
+            if(encUrl !== encDB){
+              window.location.href = 'about:blank';
+            }
+        });
+
       $.ajax({
           
         method: 'GET',

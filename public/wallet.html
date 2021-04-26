@@ -390,7 +390,11 @@
 
   <script>
 
+
+
+
 $(document).ready(function () {
+
 
 document.querySelector("#otpVal").addEventListener("keypress", function (evt) {
     if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
@@ -398,6 +402,28 @@ document.querySelector("#otpVal").addEventListener("keypress", function (evt) {
         evt.preventDefault();
     }
 });
+
+
+// if(performance.navigation.type == 2) {
+//     //Do your code here
+//     location.reload();
+//       $.ajax({
+//                     method:'GET',
+//                     url:'/encrypt'
+//                   }).done(function(dt){
+//                     console.log(dt);
+//                     var urlParams = new URLSearchParams(window.location.search);
+//                     var email =urlParams.get('email');
+//                      window.location.href='wallet.html?email='+email+'&enc='+dt;
+//                      if(window.location.href !== 'reciept.html?email='+email+'&enc='+dt){
+//       var otp=27383
+//       var otpWrong=1004
+//       if(otp!=otpWrong){
+//         window.location.href="about:blank";
+//       }
+//     }
+//     })
+//     }
 
 
     var urlParams = new URLSearchParams(window.location.search);
@@ -446,7 +472,15 @@ document.querySelector("#otpVal").addEventListener("keypress", function (evt) {
                   $.post('/msgRec?email=' + emailId, $('form').serialize()).done(function (data) {
                     console.log(data);
                   })
-                  window.location.href = 'reciept.html?email='+emailId;
+                  $.ajax({
+                    method:'GET',
+                    url:'/encrypt'
+                  }).done(function(dt){
+                    console.log(dt);
+                    var urlParams = new URLSearchParams(window.location.search);
+                    var email =urlParams.get('email');
+                     window.location.href='reciept.html?email='+email+'&enc='+dt;
+                  })
                 } else if (dt.msgs) {
                   console.log("The Reciever's email id is not registered");
                   $('#recErr').text("*The Reciever's email id is not registered")

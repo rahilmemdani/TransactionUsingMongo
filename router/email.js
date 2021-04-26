@@ -136,6 +136,22 @@ router.post('/otp', function (req, res) {
     })
 })
 
+router.get('/encrypt',function(req,res){
+    var otp = otpGenerator.generate(50, { upperCase: false, specialChars: false, alphabets: true });
+    res.send(otp);
+    db.collection('homeEnc').insertOne({otp:otp})
+})
+
+router.get('/encryptHome',function(req,res){
+    db.collection('homeEnc').find().toArray(function (err,rows) {
+        if(!err){
+            res.send(rows[rows.length-1]);
+        }else{
+            res.send(err);
+        }
+    })
+})
+
 
 
 router.post('/otpReg', function (req, res) {
