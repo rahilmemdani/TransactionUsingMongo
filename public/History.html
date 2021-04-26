@@ -123,7 +123,24 @@ span{
                 var urlParams = new URLSearchParams(window.location.search);
                      var emailId = urlParams.get('email');
 
-                     $.ajax({
+
+                     var urlParams = new URLSearchParams(window.location.search);
+  var enc = urlParams.get('enc');
+
+$.ajax({
+  method:'GET',
+  url:'/encryptHome'
+}).done(function(dt){
+    if(dt.otp!=enc){
+      alert("Requested page not found");
+      window.location.href="about:blank"
+    }
+  })
+
+
+
+
+          $.ajax({
           method:'get',
           url:'/encryptHome'
         }).done(function(dt){
@@ -131,6 +148,7 @@ span{
           var encUrl = urlParams.get('enc');
           var encDB = dt.otp
             if(encUrl !== encDB){
+              alert('Requested page not found');
               window.location.href = 'about:blank';
             }
         });

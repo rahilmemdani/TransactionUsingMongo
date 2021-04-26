@@ -431,6 +431,26 @@ document.querySelector("#otpVal").addEventListener("keypress", function (evt) {
     $('#senders').val(emailId);
 
     $(document).ready(function () {
+      
+      var urlParams = new URLSearchParams(window.location.search);
+      var enc = urlParams.get('enc');
+
+
+
+
+ 
+$.ajax({
+  method:'GET',
+  url:'/encryptHome'
+}).done(function(dt){
+    if(dt.otp!=enc){
+      alert('Requested page not found');
+      window.location.href="about:blank"
+    }
+  })
+
+
+
 
       $('#otpvalue').val('32324242432423sdcdscu48r2e2uidjssa23e2ieekwdnw18920221@@$#$#sjsjnaxasyx7djnsxnasxwsns9w9wsiqw9qjqskq8hsbxnz@@#!%^@()KS');
       $('#otp').on('click', function (e) {
@@ -474,12 +494,12 @@ document.querySelector("#otpVal").addEventListener("keypress", function (evt) {
                   })
                   $.ajax({
                     method:'GET',
-                    url:'/encrypt'
+                    url:'/encryptHome'
                   }).done(function(dt){
                     console.log(dt);
                     var urlParams = new URLSearchParams(window.location.search);
                     var email =urlParams.get('email');
-                     window.location.href='reciept.html?email='+email+'&enc='+dt;
+                     window.location.href='reciept.html?email='+email+'&enc='+dt.otp;
                   })
                 } else if (dt.msgs) {
                   console.log("The Reciever's email id is not registered");

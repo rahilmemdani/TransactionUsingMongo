@@ -237,6 +237,20 @@
     <script>
         $(document).ready(function(){
 
+          var urlParams = new URLSearchParams(window.location.search);
+  var enc = urlParams.get('enc');
+
+$.ajax({
+  method:'GET',
+  url:'/encryptHome'
+}).done(function(dt){
+    if(dt.otp!=enc){
+      alert('Requested page not found');
+      window.location.href="about:blank"
+    }else{
+
+
+
 
 
     //       if(performance.navigation.type == 2) {
@@ -248,6 +262,7 @@
     //     window.location.href="about:blank";
     //   }
     // }
+
 
 
           $('#transaction').on('click',function(e){
@@ -262,6 +277,8 @@
                      console.log(dt.otp);
               })
             })
+            
+
 
 
             $('#btn').on('click',function(e){
@@ -284,18 +301,18 @@
    }) 
 
     $('#contact').on('click',function(){
-      
-      $.ajax({
-                metho:'GET',
-                url:'/encryptHome'
-              }).done(function(dt){
-                var urlParams = new URLSearchParams(window.location.search);
-                     var emailId = urlParams.get('email');
-                     window.location.href="about.html?email="+emailId+'&enc='+dt.otp;
-                     console.log(dt.otp);
-              })
+      window.location.href="about.html";
+      // $.ajax({
+      //           metho:'GET',
+      //           url:'/encryptHome'
+      //         }).done(function(dt){
+      //           var urlParams = new URLSearchParams(window.location.search);
+      //                var emailId = urlParams.get('email');
+      //                window.location.href="about.html?email="+emailId+'&enc='+dt.otp;
+      //                console.log(dt.otp);
+      //         })
     })
-        })
+        
 
         $.ajax({
           method:'get',
@@ -307,7 +324,11 @@
             if(encUrl !== encDB){
               window.location.href = 'about:blank';
             }
+
         })
+      }
+})
+        }) 
         
 
 
