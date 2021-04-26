@@ -6,6 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SMART CONTRACT</title>
   <style>
+
+
+
+#btns {
+      background-color: transparent;
+      /* font-style: italic; */
+      margin-inline-end: 10px;
+      border: none;
+      outline: none;
+
+    }
+
+
+    #btns {
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      min-width: 100px;
+      height: 50px;
+      background-color: transparent;
+      border-radius: 7px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+      position: relative;
+      z-index: 1;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black; 
+      cursor: pointer;
+      color: whitesmoke;
+      font-size: 18px;
+    }
+
+    #btns:hover {
+      color: #3a57af;
+      background-color: white;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+
     #btn {
       background-color: transparent;
       /* font-style: italic; */
@@ -15,21 +65,7 @@
 
     }
 
-    /* #btn
-{
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  min-width: 100px;
-  height: 50px;
-  background-color: transparent;
-  border-radius:7px;
-  cursor: pointer;
-  margin-top: -35px;
-  color: whitesmoke;
-  font-size: 18px;
 
-} */
     #btn {
       justify-content: center;
       align-items: center;
@@ -59,13 +95,15 @@
     }
 
     #btn:hover {
-      color: #0d4c6e;
+      color: #3a57af;
       background-color: white;
       border-top: 2px solid gray;
       border-left: 2px solid gray;
       border-bottom: 2px solid black;
       border-right: 2px solid black;
     }
+
+
 
     #receipt{
       border:2.7px solid black;
@@ -79,12 +117,14 @@
 
 <div class="main">
 
-  <header style="background-color: #0d4c6e; color: whitesmoke;padding: 20px;">
+  <header style="background-color: #3a57af; color: whitesmoke;padding: 20px;">
     <h1>SMART CONTRACT</h1>
 
     <form action="/logout">
       <p style="float:right; margin-top:-34px;"><input type="submit" id="btn" value="logout"></p>
+      <p style="float:right; margin-top:-34px;"><input type="submit" id="btns" value="Home"></p>
     </form>
+
 
 </div>
 </div>
@@ -113,9 +153,18 @@
   <script src="jquery-3.5.1.min.js"></script>
   <script>
 
+
+var urlParams = new URLSearchParams(window.location.search);
+    var email = urlParams.get('email');
+
     $('#btn').on('click',function(e){
       e.preventDefault();
-      window.location.href='login.html';
+      window.location.href='login.html?email='+email;
+    })
+
+    $('#btns').on('click',function(e){
+      e.preventDefault();
+      window.location.href='home.html?email='+email;
     })
 
     //new Date(val.DateAdded).toLocaleString()

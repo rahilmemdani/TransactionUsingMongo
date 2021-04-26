@@ -18,7 +18,7 @@
 
 <body>
     <div class="testbox">
-        <h1 style="color:#3a57af"><b>Registration</b></h1>
+        <h1 style="color:#3a57af"><b>Sign up</b></h1>
         <form>
             <hr>
             <div class="accounttype">
@@ -124,17 +124,17 @@
         }
 
         .testbox {
-            margin: 20px auto;
+            margin: 80px auto;
             width: 443px;
             height: 564px;
             -webkit-border-radius: 8px/7px;
             -moz-border-radius: 8px/7px;
             border-radius: 8px/7px;
             background-color: #ebebeb;
-            -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-            -moz-box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-            box-shadow: 1px 2px 5px rgba(0, 0, 0, .31);
-            border: solid 1px #cbc9c9;
+            -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, .31);
+            -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, .31);
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, .31);
+            border: solid 1px white;
         }
 
         #otp {
@@ -234,8 +234,8 @@
 
 
         hr {
-            color: #a9a9a9;
-            opacity: 0.3;
+            color: #3a57af;
+            opacity: 50;
         }
 
         input[type=text],
@@ -255,6 +255,7 @@
             margin-left: -5px;
             margin-top: 13px;
             padding-left: 10px;
+            
         }
 
 
@@ -275,38 +276,9 @@
             border: solid 0px #cbc9c9;
         }
 
-        .gender {
-            margin-left: 30px;
-            margin-bottom: 30px;
-        }
+        
 
-        .accounttype {
-            margin-left: 8px;
-            margin-top: 20px;
-        }
-
-        a.button {
-            font-size: 14px;
-            font-weight: 600;
-            color: white;
-            padding: 6px 25px 0px 20px;
-            margin: 10px 8px 20px 0px;
-            display: inline-block;
-            float: right;
-            text-decoration: none;
-            width: 50px;
-            height: 27px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            border-radius: 5px;
-            background-color: #3a57af;
-            -webkit-box-shadow: 0 3px rgba(58, 87, 175, .75);
-            -moz-box-shadow: 0 3px rgba(58, 87, 175, .75);
-            box-shadow: 0 3px rgba(58, 87, 175, .75);
-            transition: all 0.1s linear 0s;
-            top: 0px;
-            position: relative;
-        }
+    
 
         button:hover {
             top: 3px;
@@ -323,6 +295,14 @@
     <script src="jquery-3.5.1.min.js"></script>
     <script>
         $(document).ready(function () {
+
+
+    document.querySelector("#otpVal").addEventListener("keypress", function (evt) {
+    if (evt.which != 8 && evt.which != 0 && evt.which < 48 || evt.which > 57)
+    {
+        evt.preventDefault();
+    }
+});
 
 
             $('#show').on('click', function (e) {
@@ -346,11 +326,11 @@
                     console.log(data)
                     console.log($('#otpValue').val());
                     if (data.notReg) {
-                        $('#emailPar').text('Email is already registered');
+                        $('#emailPar').text('*This email id  is already registered');
                     } else if (data.otp) {
                         $('#otpSentPar').text('OTP sent on the above email id').css('color', 'green');
                     } else if (data.Error) {
-                        $('#otpSentPar').text('Above email id is not registered on gmail').css('color', 'red');
+                        $('#otpSentPar').text('Incorrect email id').css('color', 'red');
                     }
                 })
             })
@@ -393,12 +373,12 @@
                                     }
                                 })
                         } else {
-
-                            $('#listings').append(`<li>*Min 1 uppercase letter</li><li>*Min 1 lowercase letter.</li>*Min 1 special character.<li><li>*Min 1 number.</li><li>*Min 8 characters.</li>`)
+                            $('#listings').html(`<li>*Min 1 uppercase letter</li><li>*Min 1 lowercase letter.</li>*Min 1 special character.<li><li>*Min 1 number.</li><li>*Min 8 characters.</li>`)
                         }
                     })
 
                 } else {
+                    $('#reg').hide();
                     $('#otpPar').text('* Incorrect otp').css('color', 'red');
                 }
             })

@@ -6,9 +6,9 @@ const otpGenerator = require('otp-generator')
 
 var transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',
-    service: 'gmail',
+    // service: 'gmail',
     auth: {
-        user: 'rahilmemdani19',
+        user: 'rahilmemdani19@gmail.com',
         pass: 'wyXbik-degren-mocmy4'
     }
 });

@@ -34,19 +34,37 @@ router.get('/wallet', function (req, res) {
 })
 
 router.post('/wallet', function (req, res) {
-    var queryString=req.query.email
 
     db.collection('login').find({ email: req.body.receiver }).toArray(function (err, coll) {
         if (coll == '') {
             res.json({'msgs':"The Reciever's email id is not registered"})
             console.log(coll);
         } else{
-            db.collection('wallet').find({reciever:req.body.receiver}).toArray(function(err,rows){
-                console.log(queryString);
-                console.log(rows);
-                if(rows[0].amount >= req.body.amount && req.body.amount>=1 && rows[0].reciever != queryString){
-            db.collection('wallet').updateOne({reciever:queryString},{$set:{amount: parseInt(rows[0].amount) - parseInt(req.body.amount)}});
+            var queryString=req.query.email
+            db.collection('wallet').find({reciever:req.query.email}).toArray(function(err,rows){
+                // console.log(req.query.email);
+                // console.log('first');
+                // console.log(rows[0]);
+                var queryString=req.query.email
+
+                if(req.body.receiver == queryString){
+                    res.json({'incorrectEmail':'Cannot send money to the same email id.'})
+                }else if(req.body.amount<=0){
+                    res.json({'incorrect':'Incorrect amount'})
+                }else if(rows[0].amount < req.body.amount){
+                    res.json({'negative':'Negative balance'})
+                }else if(rows[0].amount >= req.body.amount && req.body.amount>=1 && req.body.receiver != queryString){
+            db.collection('wallet').updateOne({reciever:queryString},{$set:{amount: parseInt(rows[0].amount) - parseInt(req.body.amount)}},function(err,rows){
+                if(!err){
+                    console.log('QueryString');
+                    console.log(rows[0]);
+                }else{
+                    console.log(err);
+                }
+            });
             db.collection('wallet').find({reciever:req.body.receiver}).toArray(function(err,collect){
+                console.log('Collect');
+                console.log(collect[0]);
             db.collection('wallet').updateOne({reciever:req.body.receiver},{$set:{amount: parseInt(collect[0].amount) + parseInt(req.body.amount) }}, function (err, rows) {
                 if (!err) {
                     res.json({'successMsg':'Successful'})
@@ -59,6 +77,7 @@ router.post('/wallet', function (req, res) {
     }else{
         res.json({'balance':'negative'})
     }
+// }
     })
 }
     // console.log(coll[0]);
