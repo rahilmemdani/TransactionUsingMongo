@@ -18,6 +18,7 @@
     <span id="history"><b>Transfer activity</b></span>
     <span id="transaction"><b>Transaction</b></span>
     <span id="contact"><b>About</b></span>
+    <p style="float:right; margin-top:-34px;"><input type="submit" id="btn" value="logout"></p>
 </header>
 </div>
 
@@ -30,7 +31,8 @@
   </div>
   <div>
      <h1 class="main-title">PayRoll
-     <p class="second-title">Lorem ipsum dolor sit amet consectetur. </p></h1>
+         <br>
+     <p class="second-title">Lorem ipsum dolor sit amet consectetur.</p></h1>
   <div class="contacts">
    
   </div>
@@ -55,6 +57,57 @@
         font-family: 'Open Sans', sans-serif;
 
     }
+
+
+
+    #btn {
+      background-color: transparent;
+      /* font-style: italic; */
+      margin-inline-end: 10px;
+      border: none;
+      outline: none;
+
+    }
+
+
+    #btn {
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      min-width: 100px;
+      height: 50px;
+      background-color: transparent;
+      border-radius: 7px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
+      transition: all 0.4s;
+      position: relative;
+      z-index: 1;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black; 
+      cursor: pointer;
+      color: whitesmoke;
+      font-size: 18px;
+    }
+
+    #btn:hover {
+      color: #3a57af;
+      background-color: white;
+      border-top: 2px solid gray;
+      border-left: 2px solid gray;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+
+
 
     #history{
         margin-left: 360px;
@@ -189,6 +242,13 @@
                      var emailId = urlParams.get('email');
                 window.location.href='wallet.html?email='+emailId
             })
+
+
+            $('#btn').on('click',function(e){
+      e.preventDefault();
+      window.location.href='login.html';
+    })
+
 
             $('#history').on('click',function(){
                 var urlParams = new URLSearchParams(window.location.search);
