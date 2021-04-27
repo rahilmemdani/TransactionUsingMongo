@@ -51,11 +51,15 @@ router.post('/msgRec', function (req, res) {
             res.json({ 'notReg': 'Email is not registered' });
         } else {
             console.log(queryString);
+            db.collection("wallet").find({reciever:queryString}).toArray(function(err,coll) {
+                if(!err){
+                    console.log(coll[0]);
+                    res.send(coll[0]);
             var mailOptions = {
                 from: 'rahilmemdani19@gmail.com',
                 to: queryString,
                 subject: 'Account debited',
-                text: `Dear Customer, transaction of INR ${req.body.amount} done on PayRoll account ${queryString}.`
+                text: `Dear Customer, transaction of INR ${req.body.amount} done on PayRoll account ${queryString}.  Avail Bal in A/c INR ${coll[0].amount}.`
             };
 
 
@@ -68,6 +72,11 @@ router.post('/msgRec', function (req, res) {
                     res.json({ 'Mail': 'sent' });
                 }
             })
+        }else{
+            console.log(err);
+            res.send(err);
+        }
+})
         }
     })
 })
@@ -81,11 +90,19 @@ router.post('/msgSent', function (req, res) {
             res.json({ 'notReg': 'Email is not registered' });
         } else {
             console.log(queryString);
+
+            db.collection("wallet").find({reciever:queryString}).toArray(function(err,coll) {
+                    if(!err){
+                        console.log(coll[0]);
+                        res.send(coll[0]);
+                        
+
+
             var mailOptions = {
                 from: 'rahilmemdani19@gmail.com',
                 to: queryString,
                 subject: 'Account credited',
-                text: `Dear Customer, your account ${queryString} is credited by INR ${req.body.amount}. `
+                text: `Dear Customer, your account ${queryString} is credited by INR ${req.body.amount}. Avail Bal in A/c INR ${coll[0].amount}. `
             };
 
 
@@ -98,6 +115,11 @@ router.post('/msgSent', function (req, res) {
                     res.json({ 'Mail': 'sent' });
                 }
             })
+        }else{
+            console.log(err);
+            res.send(err);
+        }
+})
         }
     })
 })
