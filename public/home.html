@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+  type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+  crossorigin="anonymous" />
     <title>Home page</title>
 </head>
 <body>
@@ -12,13 +20,14 @@
     <div class="main">
 
         <header style="background-color: #3a57af; color: whitesmoke;padding: 20px;">
-          <h1>PayRoll</h1>
+          <h1><u><i class="fab fa-paypal"></i>ockket </u></h1>
 
 
     <span id="history"><b>Transfer activity</b></span>
     <span id="transaction"><b>Transaction</b></span>
     <span id="contact"><b>About</b></span>
-    <p style="float:right; margin-top:-34px;"><input type="submit" id="btn" value="logout"></p>
+    <p style="float:right; margin-top:-34px;"id="btn"  ><i class="fas fa-sign-out-alt"></i></p>
+    
 </header>
 </div>
 
@@ -30,8 +39,7 @@
     </svg>
   </div>
   <div>
-     <h1 class="main-title">PayRoll
-         <br><br>
+     <h1 class="main-title"><u><i class="fab fa-paypal"></i>ockket</u>
      <p class="second-title">Lorem ipsum dolor sit amet consectetur.</p></h1>
   <div class="contacts">
    
@@ -73,8 +81,8 @@
     #btn {
       justify-content: center;
       align-items: center;
-      padding: 0 20px;
-      min-width: 100px;
+      padding: 0 5px;
+      min-width: 80px;
       height: 50px;
       background-color: transparent;
       border-radius: 7px;
@@ -95,7 +103,7 @@
       border-right: 2px solid black; 
       cursor: pointer;
       color: whitesmoke;
-      font-size: 18px;
+      font-size: 25px;
     }
 
     #btn:hover {
@@ -161,6 +169,8 @@
   font-family: 'Poppins', sans-serif;
    position: relative;
    top: -50px;
+   margin: 40px 200px 0px 200px;
+   background-color: #5c82f3  ;
 }
 
 .blob {
