@@ -24,7 +24,7 @@ router.post('/email', function (req, res) {
                 from: 'rahilmemdani19@gmail.com',
                 to: req.body.email,
                 subject: 'Registration confirmed',
-                text: `Congratulations! ${(req.body.name).toUpperCase()}, you have been registered successfully on PayRoll!!`
+                text: `Congratulations! ${(req.body.name).toUpperCase()}, you have been registered successfully on Pockket!!`
             };
 
 
@@ -59,7 +59,7 @@ router.post('/msgRec', function (req, res) {
                 from: 'rahilmemdani19@gmail.com',
                 to: queryString,
                 subject: 'Account debited',
-                text: `Dear Customer, transaction of INR ${req.body.amount} done on PayRoll account ${queryString}.  Avail Bal in A/c INR ${coll[0].amount}.`
+                text: `Dear Customer, transaction of INR ${req.body.amount} done on Pockket account ${queryString}.  Avail Bal in A/c INR ${coll[0].amount}.`
             };
 
 
