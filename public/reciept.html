@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+  type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+  crossorigin="anonymous" />
   <title>SMART CONTRACT</title>
   <style>
 
@@ -22,8 +30,8 @@
     #btns {
       justify-content: center;
       align-items: center;
-      padding: 0 20px;
-      min-width: 100px;
+      /* padding: 0 0px; */
+      min-width: 80px;
       height: 50px;
       background-color: transparent;
       border-radius: 7px;
@@ -44,7 +52,7 @@
       border-right: 2px solid black; 
       cursor: pointer;
       color: whitesmoke;
-      font-size: 18px;
+      font-size: 27px;
     }
 
     #btns:hover {
@@ -69,8 +77,8 @@
     #btn {
       justify-content: center;
       align-items: center;
-      padding: 0 20px;
-      min-width: 100px;
+      /* padding: 0 5px; */
+      min-width: 80px;
       height: 50px;
       background-color: transparent;
       border-radius: 7px;
@@ -91,7 +99,7 @@
       border-right: 2px solid black; 
       cursor: pointer;
       color: whitesmoke;
-      font-size: 18px;
+      font-size: 27px;
     }
 
     #btn:hover {
@@ -121,8 +129,8 @@
     <h1>SMART CONTRACT</h1>
 
     <form action="/logout">
-      <p style="float:right; margin-top:-34px;"><input type="submit" id="btn" value="logout"></p>
-      <p style="float:right; margin-top:-34px;"><input type="submit" id="btns" value="Home"></p>
+      <p style="float:right; margin-top:-34px;"id="btn" ><i class="fas fa-sign-out-alt"></i></p>
+      <p style="float:right; margin-top:-34px;" id="btns"><i class="fas fa-home"></i></p>
     </form>
 
 
@@ -162,19 +170,11 @@
 
 
 
+
 var urlParams = new URLSearchParams(window.location.search);
     var email = urlParams.get('email');
 
 
-    // if(performance.navigation.type == 2) {
-    // //Do your code here
-    // location.reload();
-    // var otp=27383
-    //   var otpWrong=1004
-    //   if(otp!=otpWrong){
-    //     window.location.href="about:blank";
-    //   }
-    // }
 
     var urlParams = new URLSearchParams(window.location.search);
       var enc = urlParams.get('enc');
@@ -190,10 +190,13 @@ $.ajax({
     }
   })
 
+  
+
+
 
     $('#btn').on('click',function(e){
       e.preventDefault();
-      window.location.href='login.html';
+    window.location.href="login.html";
     })
 
     $('#btns').on('click',function(e){
